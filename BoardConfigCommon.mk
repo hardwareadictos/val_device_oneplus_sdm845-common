@@ -139,6 +139,9 @@ BOARD_SUPPRESS_EMMC_WIPE := true
 BOARD_ROOT_EXTRA_FOLDERS := odm op1 op2
 BOARD_ROOT_EXTRA_SYMLINKS := /vendor/lib/dsp:/dsp /vendor/firmware:/firmware /vendor/bt_firmware:/bt_firmware /mnt/vendor/persist:/persist
 
+# Telephony
+TARGET_PROVIDES_QTI_TELEPHONY_JAR := true
+
 # Sepolicy
 BOARD_PLAT_PRIVATE_SEPOLICY_DIR += $(COMMON_PATH)/sepolicy/private
 
