@@ -128,3 +128,6 @@ BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flag 2
 
 # Inherit from the proprietary version
 -include vendor/oneplus/sdm845-common/BoardConfigVendor.mk
+
+# Inherit from oppo-common
+-include device/oneplus/sdm845-common/oppo-common/BoardConfigCommon.mk) 

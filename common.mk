@@ -114,7 +114,6 @@ PRODUCT_BOOT_JARS += \
 
 # tri-state-key
 PRODUCT_PACKAGES += \
-    KeyHandler \
     tri-state-key_daemon
 
 # Update engine
@@ -132,3 +131,6 @@ PRODUCT_STATIC_BOOT_CONTROL_HAL := \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Inherit from oppo-common
+$(call inherit-product, device/oneplus/sdm845-common/oppo-common/common.mk)
